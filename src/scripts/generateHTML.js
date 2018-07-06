@@ -1,6 +1,8 @@
 import  _ from "lodash";
 import fs from "fs";
 import  Markdown from "marked";
+import MarkdownIt from "markdown-it";
+import MarkdownItAttrs from "markdown-it-attrs";
 
 // ---------------------------------------
 
@@ -24,17 +26,32 @@ renderer.html = function(html) {
 // ---------------------------------------
 
 const parseHTML = ( target, markdownOptions, ) => {
-	return Markdown(
-		fs.readFileSync(
-			target, 
+	let MdIT = new MarkdownIt({
+		html: true,
+  		linkify: true
+  	});
+	MdIT.use(MarkdownItAttrs);
+
+	return MdIT.render(fs.readFileSync(
+			target,
 			markdownOptions.encoding
-		), 
-		{ renderer: renderer, }
-	).split("\\page")
+		)).split("\\page")
 		.map(( page,  pageCount) => {
 			return `<div class="phb" id = "p${ pageCount + 1 }">${ page }</div>`;
 		})
 		.join(" ");
+
+	// return Markdown(
+	// 	fs.readFileSync(
+	// 		target,
+	// 		markdownOptions.encoding
+	// 	),
+	// 	{ renderer: renderer, }
+	// ).split("\\page")
+	// 	.map(( page,  pageCount) => {
+	// 		return `<div class="phb" id = "p${ pageCount + 1 }">${ page }</div>`;
+	// 	})
+	// 	.join(" ");
 };
 
 const generateHTML = (target, style, markdownOptions, ) => {
@@ -49,7 +66,7 @@ const generateHTML = (target, style, markdownOptions, ) => {
 					${ css }
 				</style>
 			</head>
-			
+
 			<body class = "document">
 				<div class = "pages">
 					${ html }

@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/handbooker.svg)](https://badge.fury.io/js/handbooker)
 
-Turn markdown into a Player's Handbook-style document. 
+Turn markdown into a Player's Handbook-style document.
 
 Based on [Homebrewery](https://github.com/stolksdorf/homebrewery)'s stylesheet.
 
@@ -14,14 +14,15 @@ For a working example, take a look at [handbooker-sample-project](https://github
 
 ```
   const { handbooker, } = require("handbooker");
-  
+
   const target = "./rulebook.md";
-  
+
   const destination = "./rulebook.pdf";
 
   const options = {
     "debug": true,
     "style": "dnd",
+    "outputTypes": "pdf,html"
     "printOptions": {
       displayHeaderFooter: false,
     },
@@ -46,7 +47,7 @@ With:
 
 ## Styles
 
-This package can support creation of documents in the style of several different games. 
+This package can support creation of documents in the style of several different games.
 
 ### Included styles
 
