@@ -16,13 +16,18 @@ const markdownOptions = {
 
 const stylesheets = {
 	"dnd": "../lib/styles/homebrewery-styles.css",
-	"genesys": "../lib/styles/genesys-styles.css",
+	"genesys": [
+		"../lib/styles/genesys-styles.css",
+		"../lib/styles/homebrewery-styles.css"
+	]
 };
 
 // ---------------------------------
 
 const generatePDF = ( target, destination, options, ) => {
+
 	const style = options.customStyles ? options.customStyles : ( stylesheets[options.style] || stylesheets.dnd );
+
 	const createWhat = options.outputTypes ? options.outputTypes.join(',').toLowerCase() : "pdf";
 
 	const html = generateHTML( target, style, ( options.markdownOptions || markdownOptions ) );

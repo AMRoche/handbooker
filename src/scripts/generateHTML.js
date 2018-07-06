@@ -57,7 +57,15 @@ const parseHTML = ( target, markdownOptions, ) => {
 const generateHTML = (target, style, markdownOptions, ) => {
 	const html = Array.isArray(target) ? target.map( path => parseHTML( path, markdownOptions, ) ).join(" ") : parseHTML( target, markdownOptions, );
 
-	const css = fs.readFileSync(style, function(err) { if (err) console.log(err); });
+	let css = '';
+
+	if(! Array.isArray(style)) {
+		style = [style];
+	}
+
+	for (var i = style.length - 1; i >= 0; i--) {
+		css += fs.readFileSync(style[i], function(err) { if (err) console.log(err); });
+	}
 
 	return `
 		<html>
