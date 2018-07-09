@@ -1,5 +1,7 @@
 # Genesys GM Binder Theme
 
+
+
 Header 1 should be used to create chapter titles (like above). The first letter of the next text block will be capitalized just like this automatically! Headline 1 and Headline 2 both also span both columns. If you separate your text above a Headline 1 or Headline 2 with a blank line in the editor it will automatically shift the contents of everything after the blank line to the second size.
 
      If you reach the end of a column it will roll over to the next column automatically, but this will not always create an attractive spacing at the bottom. You can force GM binder to start a new column like this by using the `\columnbreak` command. To indent a paragraph (they should be after the first under each header) just use about 5 ` ` before the text.
@@ -55,7 +57,9 @@ There are many different type faces. Underlines can be created with the HTML `<u
 
 Footers, like the one at the bottom of this page, can be created with the following code:
 
-`<div class="footnote">THEME TESTER<BR /><p>GENESYS</p></div>`
+```
+<div class="footnote">THEME TESTER<BR /><p>GENESYS</p></div>
+```
 
      When you're ready to end a page, you can use
 
@@ -88,7 +92,11 @@ Note: The bottom line of these boxes title's should be underlined with the HTML 
 <span class='challenge'>c</span> = Challenge Dice<br>
 <span class='proficiency'>c</span> = Proficiency Dice <br>
 
-You can create a "Note" box like this with `<div class='note'></div>`. To create the dice and their symbols
+You can create a "Note" box like this with
+```
+<div class='note'></div>
+```
+. To create the dice and their symbols
 
 </div>
 
@@ -106,17 +114,13 @@ You can create a "Note" box like this with `<div class='note'></div>`. To create
 <span class='proficiency'>c</span>
 ```
 
-<span class='symbols'>a, h, f, s, t, d </span>
-<span class='setback'>b</span>
-<span class='boost'>b</span
-<span class='difficulty'>d</span>
-<span class='ability'>d</span>
-<span class='challenge'>c</span>
-<span class='proficiency'>c</span>
 <div class='example'>
 
 ##### Example
-You can create example boxes like this with `<div class='example'></div>`
+You can create example boxes like this with
+```
+<div class='example'></div>
+```
 
 </div>
 
@@ -126,7 +130,19 @@ You can create example boxes like this with `<div class='example'></div>`
 
 <div style="margin-top:25px;"></div>
 
-\columnbreak
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Stat Blocks
 
@@ -163,6 +179,7 @@ You can create a number of stat blocks as seen in the book with the following co
 <span class="mdef">0</span>
 <span class="rdef">1</span>
 </div>
+
 <div class="minion">
 <span class="soak">7</span>
 <span class="wound">10</span>

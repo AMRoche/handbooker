@@ -70,6 +70,7 @@ const generateHTML = (target, style, markdownOptions, ) => {
 	return `
 		<html>
 			<head>
+				<meta charset="UTF-8">
 				<style>
 					${ css }
 				</style>
