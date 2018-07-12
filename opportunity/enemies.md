@@ -213,7 +213,7 @@ Your groups of street toughs can be led by the gang leader, another go-to oppone
 
 **Abilities**: None.
 
-**Equipment**: *Bowie Knife* (Melee; Damage 5; Critical 3; Range [Engaged]; Pierce 2), •Heavy leather clothing*ß (+2 soak).
+**Equipment**: *Bowie Knife* (Melee; Damage 5; Critical 3; Range [Engaged]; Pierce 2), •Heavy leather clothing* (+2 soak).
 
 
 <br>
@@ -245,7 +245,7 @@ A clockwork automata of the 34th century; this pile of humanoid components can b
 
 **Talents**: None.
 
-**Abilities**: *Mechanical* (does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins), clockwork fragility (if the automaton suffers a Critical Injury, add +20 to the result). Some bird automata also have the *Flyer*ß ability (can fly, see page 100).
+**Abilities**: *Mechanical* (does not need to breathe, eat, or drink, and can survive underwater; immune to poisons and toxins), clockwork fragility (if the automaton suffers a Critical Injury, add +20 to the result). Some bird automata also have the *Flyer* ability (can fly, see page 100).
 
 **Equipment**: *Fists or claws* (Brawl; Damage 5; Critical 3; Range [Engaged]; Disorient 2 or Vicious 1). *Can also be equipped with any form of weaponry, or custom plated armor, which will of course modify stats accordingly.*
 
@@ -387,13 +387,40 @@ The best of the best, the brightest of the brightest; these young men and women'
 
 **Equipment**: *Battle Rifle* (Ranged [Heavy]; Damage 8; Critical 3; Range [Long]), *Combat Knife* (Melee; Damage 4; Critical 3; Range [Engaged]; if attached to the end of a rifle, gains the Defensive 1 quality), *Armoured Vest* (+1 soak).
 
-<br><br>
-<br>
-<br>
-<br>
-<br><br>
+<br><br><br><br><br><br><br><br>
+
+##### Hacker Stooge
+
+Plucked off the streets by the cartels because they caused a bit too much trouble with electronics; given the offer of death, or working for the cartels, the choice wasn't too difficult for these children.
+
 <br>
 
+<div class="archetype">
+<span class="bra">1</span>
+<span class="agi">2</span>
+<span class="int">3</span>
+<span class="cun">2</span>
+<span class="wil">3</span>
+<span class="pre">1</span>
+</div>
+<div class="minion">
+<span class="soak">2</span>
+<span class="wound">5</span>
+<span class="mdef">0</span>
+<span class="rdef">0</span>
+</div>
+
+<br>
+
+**Skills** : Hacking, Sysops.
+
+**Talents**: None.
+
+**Abilities**: None.
+
+**Equipment**: *Metal Shard* (Melee; Damage 4; Critical 3; Range [Engaged];
+
+<br>
 
 ##### Junkie
 
@@ -429,6 +456,10 @@ age 6; Critical 3; Range [Short]).
 
 <br>
 
+\page
+
+## Minions
+
 ##### Spacer Wannabe
 
 Spaceers are a rare sight in Opportunity, but their visits live on in somewhat of a local legend. While the original article resembles their high-seas cousins of old; swaggering, uncultured rogues with a taste for plunder and mayhem, this breed have never lived the life - for them it is but a game. More talk than substance.
@@ -460,9 +491,7 @@ Spaceers are a rare sight in Opportunity, but their visits live on in somewhat o
 
 **Equipment**: *Jury-rigged Rifle* (Ranged [Heavy]; Damage 6; Critical 3; Range [Long]; Pierce 4), *Ritual dagger* (Melee; Damage 4; Critical 3; Range [Engaged]; Pierce 2), *Plated Jacket* (+1 soak).
 
-\page
-
-## Minions
+<br>
 
 ##### Street Tough
 
